@@ -1,2 +1,2 @@
 # BubbleSortVisualizer
-VisualizeBubbleSort
+Visualize Bubble Sort
