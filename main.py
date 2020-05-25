@@ -3,7 +3,7 @@ from time import sleep
 from numpy import interp
 from random import randint
 
-numbers = [randint(10, 100) for i in range(60)]
+numbers = [randint(10, 1000) for i in range(200)]
 sorted_list = numbers
 comparator = sorted(numbers)
 
@@ -17,6 +17,7 @@ def main():
     max_bar_y = max(numbers)
 
     i = 0
+    max_pos = len(sorted_list) - 1
 
     # Loop through the entire list and perform operations.
     while sorted_list != comparator:
@@ -27,8 +28,9 @@ def main():
                 quit()
 
         # Reset i if it is outside index
-        if i >= len(sorted_list) - 1:
+        if i >= max_pos:
             i = 0
+            max_pos -= 1
 
         # Get the numbers at the current and next index
         first = sorted_list[i]
