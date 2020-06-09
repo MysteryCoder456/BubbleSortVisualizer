@@ -22,7 +22,7 @@ def main():
     # Loop through the entire list and perform operations.
     while sorted_list != comparator:
         clock.tick(200)
-        
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 quit()
